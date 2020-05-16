@@ -1,0 +1,15 @@
+{
+	"version": "2.0.0",
+	"command": "tsc",
+	"revel": "silent",
+	"tasks": [
+		{
+			"type": "shell",
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build",
+			"label": "tsc: build - tsconfig.json"
+		}
+	]
+}
