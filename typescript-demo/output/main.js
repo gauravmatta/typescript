@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var car_1 = require("./car");
+var Car_1 = require("./Car");
 var myObj = {
     id: 2,
     name: 'Gaurav',
@@ -11,8 +11,7 @@ var myObj = {
     }
 };
 var sum = myObj.sum([1, 2, 3]);
-var car = new car_1.Car();
-car.distance = 0;
+var car = new Car_1.Car();
 car.move();
 car.move();
 //# sourceMappingURL=main.js.map
