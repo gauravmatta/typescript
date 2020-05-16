@@ -1,15 +1,26 @@
 class Car
 {
-    // private distance : number
-    constructor(private distance=0){
+    static controls:{isAuto:boolean}={
+        isAuto:true
+    };
+
+    static isAuto():boolean {
+        return Car.controls.isAuto;
+      }
+
+    constructor(private _distance=0){
     }
     move():void
     {
-        this.distance=this.distance+1;
+        this._distance+=1;
     }
-    getDistance():number
+    get distance()
     {
-        return this.distance;
+        return this._distance;
+    }
+    set distance(newDistance:number)
+    {
+        this._distance=newDistance;
     }
 }
 

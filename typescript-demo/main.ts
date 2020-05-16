@@ -14,8 +14,16 @@ let myObj : IMyInterface={
 let sum=myObj.sum([1,2,3]);
 
 let car=new Car(0);
-console.log(car.getDistance());
+console.log(car.distance);
 car.move();
-console.log(car.getDistance());
+console.log(car.distance);
 car.move();
-console.log(car.getDistance());
+console.log(car.distance);
+
+let Audi=new Car();
+console.log(Audi.distance);
+Audi.distance=55;
+console.log(Audi.distance);
+
+//Calling Static Variable
+console.log(Car.controls.isAuto);
