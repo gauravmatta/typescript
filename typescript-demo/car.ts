@@ -1,6 +1,9 @@
 class Car
 {
-    distance : number
+    private distance : number
+    constructor(){
+        this.distance=0;
+    }
     move():void{
         this.distance=this.distance+1;
         }

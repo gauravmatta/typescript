@@ -14,6 +14,5 @@ let myObj : IMyInterface={
 let sum=myObj.sum([1,2,3]);
 
 let car=new Car();
-car.distance=0;
 car.move();
 car.move();
