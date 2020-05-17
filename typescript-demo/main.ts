@@ -1,5 +1,6 @@
 import {IMyInterface} from './IMyInterface'
 import {Car} from './Car'
+import {ERiksha, Truck} from './truck';
 let myObj : IMyInterface={
     id: 2,
     name: 'Gaurav',
@@ -17,6 +18,10 @@ let car=new Car(0);
 console.log(car.distance);
 car.move();
 console.log(car.distance);
+car._speed=2;
+car.move();
+console.log(car.distance);
+car._speed=3;
 car.move();
 console.log(car.distance);
 
@@ -27,3 +32,13 @@ console.log(Audi.distance);
 
 //Calling Static Variable
 console.log(Car.controls.isAuto);
+
+const e_riksha = new ERiksha();
+console.log(e_riksha.name);
+e_riksha.distance = 5;
+e_riksha.move();
+e_riksha.move();
+console.log(e_riksha.distance);
+
+const truck = new Truck();
+console.log(truck.name);

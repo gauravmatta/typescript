@@ -1,6 +1,9 @@
-class Car
+import {ICarProps} from './ICarProps'
+import {ICarMethods} from './ICarMethods'
+class Car implements ICarProps, ICarMethods
 {
-    static controls:{isAuto:boolean}={
+    static controls:{isAuto:boolean}=
+    {
         isAuto:true
     };
 
@@ -8,16 +11,21 @@ class Car
         return Car.controls.isAuto;
       }
 
-    constructor(private _distance=0){
+    constructor(public _distance=0,public _speed=1)
+    {
+
     }
+    
     move():void
     {
-        this._distance+=1;
+        this._distance=this._distance+this._speed;
     }
+
     get distance()
     {
         return this._distance;
     }
+
     set distance(newDistance:number)
     {
         this._distance=newDistance;
